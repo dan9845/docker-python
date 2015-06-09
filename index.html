@@ -59,7 +59,7 @@
     margin-bottom: 150px;
     background-color: #dcdcdc;
     border: 1px solid #666;
-    color:black;
+    color:blue;
     text-decoration:none;
   }
 
@@ -95,11 +95,6 @@
   </div>
 
     <!-- main page content will go here -->
-  $(document).ready(function(){  
-    $('<button class="button">My Button</button>').click(function () { 
-          var name=prompt("Button press was successful!", "Woo"); 
-    });
-  });
   </core-header-panel>
 
   <script>
@@ -115,6 +110,16 @@
       console.log("Selected: " + tabs.selected);
     });
   </script>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $('<button class="button">My Button</button>').click(function () {
+          var name=prompt("Button press was successful!", "Woo");
+    });
+  });
+  </script>
+
 
 </body>
 
