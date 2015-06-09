@@ -109,9 +109,19 @@
     tabs.addEventListener('core-select', function() {
       console.log("Selected: " + tabs.selected);
     });
+
+    tabs.addEventListener('core-select', function() {
+      alert('paper-tabs was clicked!');
+    });
+
+    list.addEventListener('core-select', function() {
+      alert('post-list was clicked!');
+    });
+
+ 
   </script>
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script>
   $(document).ready(function(){
     $('<button class="button">My Button</button>').click(function () {
@@ -119,7 +129,7 @@
     });
   });
   </script>
-
+  -->
 
 </body>
 
