@@ -93,7 +93,7 @@
     <post-list show="all"></post-list>
     
   </div>
-
+  <button class="button">My Button</button>
     <!-- main page content will go here -->
   </core-header-panel>
 
@@ -101,6 +101,8 @@
     var tabs = document.querySelector('paper-tabs');
 
     var list = document.querySelector('post-list');
+
+    var button = document.querySelector('button');
 
     tabs.addEventListener('core-select', function() {
       list.show = tabs.selected;
@@ -118,6 +120,9 @@
       alert('post-list was clicked!');
     });
 
+    button.addEventListener('click', function() {
+      alert('you pushed my button');
+    });
  
   </script>
 
