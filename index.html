@@ -27,7 +27,7 @@
   html,body {
     height: 100%;
     margin: 0;
-    /* background-color: #E5E5E5; */
+    /*background-color: #E5E5E5; */
     background-color: green;
     font-family: 'RobotoDraft', sans-serif;
   }
@@ -50,6 +50,14 @@
     -ms-user-select: none;
     user-select: none;
     text-transform: uppercase;
+  }
+
+  .button {
+    padding:5px;
+    background-color: #dcdcdc;
+    border: 1px solid #666;
+    color:#000;
+    text-decoration:none;
   }
 
   .container {
@@ -88,7 +96,9 @@
   <p> Does this do anything? </p>
   <div><h4> This is a box... maybe?</h4></div>
   
-  $('<button>My Button</button>').click(function () { alert('You clicked the button'); });
+  $('<button class="button">My Button</button>').click(function () { 
+        alert('You clicked the button'); 
+  });
   </core-header-panel>
 
   <script>
